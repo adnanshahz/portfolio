@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!--header section-->
+    <section>
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#"><img src="logo/WhatsApp_Image_2023-10-24_at_21.43.25_be05b87d-removebg-preview.png"
+                            alt="PORTFOLIO"></a>
+                </div>
+                <div class="navbar">
+                    <div class="close-nav"> <button><img width="50" src="logo/close.png"> </button></div>
+                    <nav>
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#work">WORK</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-bar">
+                    <button><img src="logo/menu 1.png"> </button>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div id="home" class="container">
+                <div class="image">
+                    <img src="images/circle (1).png" alt="Image on the right side">
+                    </hr>
+                </div>
+                <div class="text">
+                    <h1 class="animate__animated animate__bounce animate__slower">I'm a Web Designer</h1>
+                    <p>Hi! My name is Adnan. I am a junior web & app designer. I create creative and mind-blowing web
+                        designs.</p>
+                        <a href = "images/cv.jpg"
+                        Download = "test_image">
+                           <button class="btn"> Download </button>
+                        </a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- style="background-color: transparent; border:1px solid #ff914d ;color: #e8f1f2;width: 130px;height: 3rem; -->
+
+
+    <section>
+        <hr style="width:50%;text-align:left; color: #ff914d;">
+        <h1 style="font-size: 3rem; color:#ff914d;text-align: center;"> ABOUT ME</h1>
+        <p style="color: #e8f1f2;text-align: center;">
+            I am a web developer with a passion for creating beautiful and functional websites. My background includes:
+        </p>
+        <div id="about" class="containers">
+            <div class="progress-bar">
+                <h2>Education::B.S.SOFTWARE ENGINEER</h2>
+                <div class="bar">
+                    <div class="progress education">50%</div>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <h2>Skills::HTML : CSS : JAVASCRIPT</h2>
+                <div class="bar">
+                    <div class="progress skills">40%</div>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <h2>Experience::1 YEAR ONLINE</h2>
+                <div class="bar">
+                    <div class="progress experience">90%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <hr style="width:50%;text-align:left;">
+        <h1 style="font-size: 3rem; color:#ff914d;text-align: center;">MY WORK</h1>
+     
+        <p  class="des" style="color: #e8f1f2;text-align: center;">
+            I work on html css and java script:
+        </p>
+        <div id="work" class="card-container">
+            <div class="card">
+                <img src="logo/html.png" alt="Card 1">
+                <h2>Card 1</h2>
+                <p>This is the content for Card 1.</p>
+            </div>
+
+            <div class="card">
+                <img src="logo/css.png" alt="Card 2">
+                <h2>Card 2</h2>
+                <p>This is the content for Card 2.</p>
+            </div>
+
+            <div class="card">
+                <img src="logo/javascript.png" alt="Card 3">
+                <h2>Card 3</h2>
+                <p>This is the content for Card 3.</p>
+            </div>
+        </div>
+    </section>
+<section>
+    <hr class="line">
+    <!-- <hr style="width:50%;text-align:left; color: #ff914d;"> -->
+    <!-- <h1 style="font-size: 3rem;margin-top: 5rem; color:#ff914d;text-align: center;">CONTACT ME</h1> -->
+    <h1 class="heading">CONTACT ME</h1>
+    <p style="color: #e8f1f2;text-align: center; ">
+        FEEL FREE THEN CONTACT ME:
+    </p>
+    <div class="containers">
+        <h1>Contact Us</h1>
+        <form class="contact-form" action="submit_contact.php" method="post">
+            <input type="email" name="email" class="form-input" placeholder="Email" required>
+            <input type="text" name="name" class="form-input" placeholder="Name" required>
+            <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required>
+            <textarea name="message" class="form-textarea" placeholder="Message" required></textarea>
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+</section>
+       <!-- <section>
+        <hr style="width:50%;text-align:left; color: #ff914d;">
+        <h1 style="font-size: 3rem; color:#ff914d;text-align: center;">CONTACT ME</h1>
+        <p style="color: #e8f1f2;text-align: center;">
+            FEEL FREE THEN CONTACT ME:
+        </p>
+        <div id="contact" class="containerss">
+            <form onsubmit="sendEmail(); reset(); return false;" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+
+    </section>-->
+    <section>
+        <div class="containner">
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+                    <img width="140" src="images/circle (2).png">
+
+
+                    <p class="footer-links">
+                        <a href="#" class="link-1">HOME</a>
+
+                        <a href="#">ABOUT</a>
+
+                        <a href="#">WORK</a>
+
+                        <a href="#">CONTACT</a>
+
+
+                    </p>
+
+                    <p class="footer-company-name">ADNAN'S PORTFOLIO © 2023</p>
+                </div>
+
+                <div class="footer-center">
+
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>STREET NO,07</span>KARACHI,PAKISTAN</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+92 303 0021048</p>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com">adnanbatva92@gmail.com</a></p>
+                    </div>
+
+                </div>
+
+                <div class="footer-right">
+
+                    <p class="footer-company-about">
+                        <span>About</span>
+                        I WILL MAKE A WELL AND BEAUTIFUL WEBSITE FOR YOUR ALL TYPES OF BUSINESS
+                    </p>
+
+                    <div class="footer-icons">
+
+                        <a
+                            href="https://www.linkedin.com/in/adnan-shahzad-4a991a280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                                src="logo/linkedin.png"></a>
+                        <a href="https://wa.me/qr/O3PYRSV7BNXHH1"><img src="logo/whatsapp.png"></a>
+                        <a href="https://instagram.com/imohammad_adnan_07?igshid=NzZlODBkYWE4Ng=="><img
+                                src="logo/instagram (1).png"></a>
+                        <a href="https://github.com/adnanshaz"><img src="logo/github.png"></a>
+
+                    </div>
+
+                </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2023 All rights reserved | ADNAN
+        </div>
+    </section>
+    <style>
+        .goontop {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+
+            bottom: 40px;
+            border-radius: 50%;
+            right: 50px;
+            text-decoration: none;
+            text-align: center;
+
+        }
+    </style>
+    <div>
+        <a class="goontop" href="#"><img src="logo/up-arrow.png"> </a>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+</body>
+<script src="app.js"></script>
+
+</html>
